@@ -1,4 +1,3 @@
-
 def menu_calculadora():
     print("\n\n --- CALCULADORA ---\n\n")
     print("Éstas son las operaciones que puedes realizar:\n\n")
@@ -53,6 +52,7 @@ def menu_calculadora():
     print("\n\nEl resultado de", num1,operador,num2,"es: ",resultado,".\n")
     
     operador2=(input("\nAhora introduce otro operador (+ - * / // ** %): "))
+    resultado2=()
 
     if operador2 not in operadores:
         print("\n\nDebes introducir un operador válido (+ - * / // ** %). PRUEBA OTRA VEZ.")
@@ -80,6 +80,7 @@ def menu_calculadora():
         menu_calculadora()
     else:
         print("Hastaluegomaricarmen")
+        return
         
 
 menu_calculadora()
